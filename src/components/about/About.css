@@ -1,8 +1,6 @@
 .section {
     padding-block: 5em;
-    /* font-size: 20px; */
 }
-
 
 .row {
     display: flex;
@@ -42,7 +40,6 @@ h3 {
 .about-info {
     position: relative;
     display: flex;
-    /* justify-content: center; */
     flex-direction: column;
     padding-block: 20px 70px;
     padding-inline: 20px;
@@ -91,9 +88,7 @@ h3 {
 .skills-list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* 4 items per row */
     gap: 20px;
-    /* Add space between items */
 }
 
 .skills-list {
@@ -108,7 +103,6 @@ h3 {
     border-radius: 20px;
     padding: 10px;
     width: calc(25% - 20px);
-    /* 4 items per row */
     margin-bottom: 20px;
     text-align: center;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
@@ -139,7 +133,6 @@ h3 {
 .label {
     font-size: 15px;
     color: #777;
-
 }
 
 .project-box-icons {
@@ -158,27 +151,65 @@ h3 {
     z-index: 1;
 }
 
-.projects-box:hover.projects-box::after {
+.projects-box:hover::after {
     bottom: 0;
 }
 
 .projects-box:hover .project-box-icons,
-.projects-box:hover.projects-box>h3,
+.projects-box:hover h3,
 .projects-box:hover .label {
     color: var(--color-white);
     z-index: 2;
 }
 
-@media (max-width:900px) {
+.education-cards {
+    margin-top: 2em;
+    padding: 2em 0;
+    background: var(--color-white);
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+}
+
+.education-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 2rem;
+}
+
+.education-card h3 {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+    color: var(--text-color-second);
+}
+
+.education-card p {
+    margin: 0;
+    color: #555;
+}
+
+.education-card strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-color-second);
+}
+
+@media (max-width: 900px) {
     .row {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         gap: 50px;
     }
 
     .col {
-        display: flex;
         justify-content: center;
         width: 100%;
     }
@@ -196,7 +227,7 @@ h3 {
     }
 }
 
-@media (max-width:540px) {
+@media (max-width: 540px) {
     .projects-box {
         width: 100%;
     }
