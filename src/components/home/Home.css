@@ -1,0 +1,217 @@
+.wrapper {
+    padding-inline: 10vw;
+}
+
+.featured-box {
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+
+.featured-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    flex-direction: column;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.featured-text-card span {
+    background: var(--third-color);
+    color: var(--color-white);
+    padding: 3px 8px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.featured-name {
+    font-size: 50px;
+    font-weight: 500;
+    color: var(--text-color-second);
+    margin-block: 20px;
+}
+
+.typedText {
+    text-transform: capitalize;
+    color: var(--text-color-third);
+}
+
+.featured-text-info {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: var(--text-color-second);
+    text-align: justify;
+}
+
+.featured-text-btn {
+    display: flex;
+    gap: 20px;
+}
+
+.featured-text-btn .blue-btn {
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+.featured-text-btn .blue-btn:hover {
+    background: var(--first-color-hover);
+}
+
+.social-icons {
+    display: flex;
+    margin-top: 5em;
+    gap: 30px;
+}
+
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.icon:hover {
+    color: var(--first-color);
+}
+
+.featured-image {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    min-height: 80vh;
+    width: 50%;
+}
+
+.scroll-icon-box {
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    margin: 0 auto;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    width: 380px;
+    height: 380px;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+
+.image img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+}
+
+@keyframes imgFloat {
+    50% {
+        transform: translateY(10px);
+        border-radius: 45% 55% 45% 55%;
+    }
+}
+
+
+
+.scroll-btn {
+    position: absolute;
+    bottom: 0;
+    /* left: 50%; */
+    /* translate: 50%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 50px;
+    text-decoration: none;
+    color: var(--text-color-second);
+    background: var(--color-white);
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.25);
+    gap: 5px;
+}
+
+
+
+
+@media (max-width:1024px) {
+    .featured-text {
+        padding: 0;
+    }
+
+    .image,
+    .image img {
+        width: 320px;
+        height: 320px;
+    }
+}
+
+@media (max-width:900px) {
+    .featured-box {
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .featured-text {
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-items: flex-start;
+        min-height: 60vh;
+
+    }
+
+    .social-icons {
+        margin-top: 2em;
+    }
+
+    .featured-image {
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 65px;
+    }
+
+    .image,
+    .image img {
+        width: 150px;
+        height: 150px;
+    }
+
+}
+
+@media (max-width:540px) {
+    .featured-name {
+        font-size: 40px;
+    }
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    color: var(--icon-color);
+    /* Add your custom color here */
+    background-color: var(--icon-bg-color);
+    /* Optional: Background color */
+}
+
+.icon:hover {
+    color: var(--first-color);
+    /* Change to the color you want on hover */
+    background-color: var(--icon-bg-hover-color);
+    /* Optional: Change background color on hover */
+}
