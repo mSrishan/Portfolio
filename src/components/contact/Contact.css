@@ -8,10 +8,10 @@
     padding: 20px 30px;
     width: 100%;
     height: 315px;
-    background: var(--second-color);
+    background: var(--text-color-third);
     border-radius: 10px;
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-    transition: .4s;
+    transition: background 0.4s ease, box-shadow 0.4s ease;
 }
 
 .contact-info h2 {
@@ -20,6 +20,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    transition: color 0.4s ease;
 }
 
 .contact-info p {
@@ -28,6 +29,7 @@
     gap: 10px;
     color: var(--color-white);
     margin-block: 5px;
+    transition: color 0.4s ease;
 }
 
 .contact-icons {
@@ -42,17 +44,17 @@
     bottom: -100%;
     width: 100%;
     height: 100%;
-    transition: .4s;
+    transition: bottom 0.4s ease;
     z-index: 1;
 }
 
-.contact-info:hover.contact-info::after {
+.contact-info:hover::after {
     bottom: 0;
 }
 
-.contact-info:hover.contact-info h2,
-.contact-info:hover.contact-info p,
-.contact-info:hover.contact-info .contact-icons {
+.contact-info:hover h2,
+.contact-info:hover p,
+.contact-info:hover .contact-icons {
     color: #777;
     z-index: 2;
 }
@@ -78,6 +80,11 @@
     border-radius: 10px;
     padding-inline: 20px;
     outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-field:focus {
+    border-color: var(--text-color-third);
 }
 
 .textarea {
@@ -89,33 +96,47 @@
     padding: 15px 20px;
     outline: none;
     resize: none;
+    transition: border-color 0.3s ease;
+}
+
+.textarea:focus {
+    border-color: var(--text-color-third);
 }
 
 .form-button .btn {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--second-color);
+    background: var(--text-color-third);
     color: var(--color-white);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .form-button .btn:hover {
-    background: #00B5E7;
+    background: #9ae6ca;
+    color: black;
 }
 
 .form-btn-icon {
     font-size: 18px;
-    /* transform: translate(-45); */
-    rotate: -45deg;
+    color: white;
+    transform: rotate(-45deg);
+    margin-left: 8px;
+    /* Add some space between text and icon */
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
     .contact-info {
         width: 100%;
     }
 }
 
-@media (max-width:540px) {
+@media (max-width: 540px) {
     .form-inputs {
         flex-direction: column;
     }
@@ -123,5 +144,4 @@
     .input-field {
         width: 100%;
     }
-
 }

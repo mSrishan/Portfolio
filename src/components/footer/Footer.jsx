@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <div className='footer'>
             <div className="top-footer">
-                <p>QZB .</p>
+                <p>SrishanMandawala</p>
             </div>
             <div className="middle-footer">
                 <ul className="footer-menu">
@@ -27,15 +27,14 @@ const Footer = () => {
                 </ul>
             </div>
             <div className="footer-social-icons">
-                <div className="flex gap-[10px] items-center">
-                    <a href='https://www.instagram.com/dev__angular/#' target='_blank' className="icon"><FaInstagram /></a>
-                    <a href='https://www.linkedin.com/in/zafarbekqurbonboyev/' target='_blank' className="icon"><FaLinkedin /></a>
-                    <a href='https://github.com/DasturchiQurbonboyev' target='_blank' className="icon"><FaGithub /></a>
-                    <a href='https://t.me/Dasturchi_Qurbonboyev' target='_blank' className="icon"><RiTelegramLine size={21} /></a>
-                </div>
-            </div>
+    <a href='https://www.instagram.com/dev__angular/#' target='_blank' className="icon"><FaInstagram /></a>
+    <a href='https://www.linkedin.com/in/zafarbekqurbonboyev/' target='_blank' className="icon"><FaLinkedin /></a>
+    <a href='https://github.com/DasturchiQurbonboyev' target='_blank' className="icon"><FaGithub /></a>
+    <a href='https://t.me/Dasturchi_Qurbonboyev' target='_blank' className="icon"><RiTelegramLine size={21} /></a>
+</div>
+
             <div className="bootom-footer">
-                <p>Copyright &copy; <a href="#home">Zafarbek Qurbonboyev</a> All rights reseved </p>
+                <p>Copyright &copy; <a href="#home">Srishan Mandawala</a> All rights reseved </p>
             </div>
         </div>
     )

@@ -1,0 +1,91 @@
+.section {
+    padding: 40px 0;
+    background-color: #f9f9f9;
+    /* Optional: Background color for the section */
+}
+
+.top-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    /* Adjust width as needed */
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    position: relative;
+    background-color: #fff;
+}
+
+.project-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #f0f0f0;
+}
+
+.project-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-item:hover:before {
+    opacity: 1;
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    /* Adjust height as needed */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.project-item:hover .project-image {
+    transform: scale(1.1);
+}
+
+.project-name {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.project-technologies {
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.technology {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-item:hover .technology {
+    background-color: #333;
+    color: #fff;
+}

@@ -3,6 +3,7 @@ import './About.css';
 import { FiDownload } from 'react-icons/fi';
 import ScrollReveal from "scrollreveal";
 import resume from '../../assets/Resume.pdf';
+import { FaCalendarAlt, FaGraduationCap } from 'react-icons/fa';
 
 const About = () => {
     useEffect(() => {
@@ -113,20 +114,16 @@ const About = () => {
             <div className="education-cards">
                     <h2>Education</h2>
                     <div className="education-card">
-                        <h3>School Name 1</h3>
-                        <p><strong>Duration:</strong> Start Date - End Date</p>
-                        <p><strong>Details:</strong> Description of what you learned.</p>
+                        <h3><FaGraduationCap size={24} color="green" /> Sabaragamuwa University Of Sri Lanka</h3>
+                        <p><FaCalendarAlt size={18} color="gray" /> 2022 - Present</p>
+                        <p>B.Sc. (Hons) in Computing and Information Systems</p>
                     </div>
                     <div className="education-card">
-                        <h3>School Name 2</h3>
-                        <p><strong>Duration:</strong> Start Date - End Date</p>
-                        <p><strong>Details:</strong> Description of what you learned.</p>
+                        <h3><FaGraduationCap size={24} color="green" /> St. Aloysius' College</h3>
+                        <p><FaCalendarAlt size={18} color="gray" /> 2019</p>
+                        <p> Physical Science Stream</p>
                     </div>
-                    <div className="education-card">
-                        <h3>School Name 3</h3>
-                        <p><strong>Duration:</strong> Start Date - End Date</p>
-                        <p><strong>Details:</strong> Description of what you learned.</p>
-                    </div>
+
                 </div>
         </div>
     );

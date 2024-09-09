@@ -33,3 +33,30 @@
     font-size: 14px;
     margin-top: 10px;
 }
+
+.footer-social-icons {
+    display: flex;
+    /* Use flexbox to align items horizontally */
+    justify-content: center;
+    /* Center the icons horizontally */
+    align-items: center;
+    /* Center the icons vertically (if needed) */
+    gap: 15px;
+    /* Add space between the icons */
+    padding: 10px;
+    /* Add padding if needed */
+}
+
+.icon {
+    color: #000;
+    /* Set the icon color */
+    font-size: 24px;
+    /* Set the icon size */
+    transition: color 0.3s ease;
+    /* Smooth color transition on hover */
+}
+
+.icon:hover {
+    color: #007bff;
+    /* Change icon color on hover (adjust to your theme) */
+}
