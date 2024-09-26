@@ -40,7 +40,12 @@ const About = () => {
                         <div className="about-info">
                             <h1>My introduction</h1>
                             <p>
-                                I’m passionate about working with modern technologies like React, Angular, and Spring Boot, which empower me to build dynamic and scalable web applications. My experience with these cutting-edge frameworks allows me to design robust front-end interfaces and develop efficient back-end systems, ensuring seamless user experiences across platforms.
+                                I am passionate about working with modern technologies like React, Angular, and Spring Boot, which empower me to create dynamic, scalable, and highly responsive web applications. My expertise in these frameworks allows me to design intuitive, robust front-end interfaces that deliver smooth, user-centric experiences. I have a strong background in developing reusable components and implementing cutting-edge features that enhance the functionality of applications. By staying updated with the latest industry trends and best practices, I ensure that my front-end solutions are both visually appealing and high-performing across devices.
+                            </p>
+                            <p>
+                                On the back-end side, I have experience building efficient, secure, and scalable systems that seamlessly integrate with front-end applications. Whether managing databases, optimizing server-side processes, or implementing authentication and authorization protocols, I take a holistic approach to ensure reliable performance. My goal is to bridge the gap between design and functionality by creating applications that are both technically sound and user-friendly. I am continuously driven by the challenge of improving user experience through creative problem-solving and innovative solutions, making each project an opportunity for growth and learning.
+
+
                             </p>
                             <div className="about-btn">
                                 <a href={resume} download='Resume'>
