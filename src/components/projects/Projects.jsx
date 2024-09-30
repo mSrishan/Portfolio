@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import ScrollReveal from "scrollreveal";
 import BuildMate from '../../assets/home/BuildMate.jpg'; // Import your project images
 import EduFlex from '../../assets/home/EduFlex.jpg'; // Import your project images
+import FrozenFantasy from '../../assets/home/FrozenFantasy.jpg'; // Import your project images
 import { FaReact, FaNodeJs, FaJava, FaPython, FaVideo, FaGithub } from 'react-icons/fa'; // Added icons
 import { SiCss3, SiHtml5, SiDjango, SiMysql } from 'react-icons/si';
 import "./Projects.css";
@@ -24,12 +25,12 @@ const projectData = [
         githubLink: 'https://github.com/your-username/buildmate' // Add your GitHub link
     },
     {
-        image: BuildMate,
-        name: 'Project Beta',
-        description: 'A web application built with Python, Django, and MySQL for data management and reporting.',
-        technologies: ['Python', 'Django', 'MySQL'],
+        image: FrozenFantasy,
+        name: 'Frozen Fantasy',
+        description: 'A web UI for an Ice Cream Shop built with React, Tailwind CSS and Framer Motion.',
+        technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
         videoLink: 'https://example.com/project-beta-video', // Add your video link
-        githubLink: 'https://github.com/your-username/project-beta' // Add your GitHub link
+        githubLink: 'https://github.com/mSrishan/Frozen-Fantasy' // Add your GitHub link
     },
     // Add more projects here...
 ];
