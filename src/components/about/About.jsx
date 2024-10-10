@@ -50,7 +50,7 @@ const About = () => {
                             <div className="about-btn">
                                 <a href={resume} download='Resume'>
                                     <button className="btn">
-                                        Download Resume <FiDownload />
+                                        Download CV <FiDownload />
                                     </button>
                                 </a>
                             </div>

@@ -58,7 +58,7 @@ const Navbar = () => {
             </div>
             <div className="nav-button">
                 <button onClick={handleDownload} className="btn">
-                    Download Resume
+                    Download CV
                 </button>
             </div>
             <div onClick={() => setResponsive(!responsive)} className="nav-menu-btn">

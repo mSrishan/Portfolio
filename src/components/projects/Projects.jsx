@@ -3,8 +3,10 @@ import ScrollReveal from "scrollreveal";
 import BuildMate from '../../assets/home/BuildMate.jpg'; // Import your project images
 import EduFlex from '../../assets/home/EduFlex.jpg'; // Import your project images
 import FrozenFantasy from '../../assets/home/FrozenFantasy.jpg'; // Import your project images
+import WOWSalon from '../../assets/home/WowSalon.jpg'; // Import your project images
 import { FaReact, FaNodeJs, FaJava, FaPython, FaVideo, FaGithub } from 'react-icons/fa'; // Added icons
 import { SiCss3, SiHtml5, SiDjango, SiMysql } from 'react-icons/si';
+
 import "./Projects.css";
 
 const projectData = [
@@ -29,6 +31,15 @@ const projectData = [
         name: 'Frozen Fantasy',
         description: 'A web UI for an Ice Cream Shop built with React, Tailwind CSS and Framer Motion.',
         technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
+        videoLink: 'https://example.com/project-beta-video', // Add your video link
+        githubLink: 'https://github.com/mSrishan/Frozen-Fantasy' // Add your GitHub link
+    },
+    
+    {
+        image: WOWSalon,
+        name: 'WOW Salon',
+        description: 'A web application for a salon built with NextJS, NodeJS, ExpressJS, MongoDB and Tailwind CSS.',
+        technologies: ['NextJS', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
         videoLink: 'https://example.com/project-beta-video', // Add your video link
         githubLink: 'https://github.com/mSrishan/Frozen-Fantasy' // Add your GitHub link
     },
