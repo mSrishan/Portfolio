@@ -86,12 +86,6 @@ const HomeComponent = () => {
                         <img src={img1} alt="" />
                     </div>
                 </div>
-                <div className="scroll-icon-box">
-                    <a href="#about" className="scroll-btn">
-                        <LuMouse className='text-[25px]' />
-                        <p>Scroll Down</p>
-                    </a>
-                </div>
             </div>
         </div>
     )

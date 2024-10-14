@@ -40,10 +40,12 @@ const About = () => {
                         <div className="about-info">
                             <h1>My introduction</h1>
                             <p>
-                                I am passionate about working with modern technologies like React, Angular, and Spring Boot, which empower me to create dynamic, scalable, and highly responsive web applications. My expertise in these frameworks allows me to design intuitive, robust front-end interfaces that deliver smooth, user-centric experiences. I have a strong background in developing reusable components and implementing cutting-edge features that enhance the functionality of applications. By staying updated with the latest industry trends and best practices, I ensure that my front-end solutions are both visually appealing and high-performing across devices.
+                                I am passionate about working with cutting-edge technologies like ReactJS, NodeJS, ExpressJS, NextJS, Spring Boot, MongoDB, and MySQL, which empower me to build dynamic, scalable, and responsive web applications. With expertise in these frameworks, I craft intuitive and strong front-end interfaces that provide smooth, user-focused experiences. My strong background in developing reusable components and implementing innovative features enhances application functionality. By staying up-to-date with the latest trends and best practices, I ensure that my solutions are not only visually appealing but also high-performing across all devices.
                             </p>
                             <p>
-                                On the back-end side, I have experience building efficient, secure, and scalable systems that seamlessly integrate with front-end applications. Whether managing databases, optimizing server-side processes, or implementing authentication and authorization protocols, I take a holistic approach to ensure reliable performance. My goal is to bridge the gap between design and functionality by creating applications that are both technically sound and user-friendly. I am continuously driven by the challenge of improving user experience through creative problem-solving and innovative solutions, making each project an opportunity for growth and learning.
+                                On the back end, I specialize in building efficient, secure, and scalable systems that seamlessly integrate with front-end applications. From managing databases and optimizing server-side processes to implementing robust authentication and authorization protocols, I take a comprehensive approach to ensure reliable performance. My focus is on bridging the gap between design and functionality, creating applications that are both technically sound and user-friendly. I am continuously motivated by the challenge of enhancing user experiences through innovative solutions, viewing each project as a chance for growth and learning.
+
+
 
 
                             </p>

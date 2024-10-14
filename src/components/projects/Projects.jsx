@@ -43,6 +43,22 @@ const projectData = [
         videoLink: 'https://example.com/project-beta-video', // Add your video link
         githubLink: 'https://github.com/mSrishan/Frozen-Fantasy' // Add your GitHub link
     },
+    {
+        image: EduFlex,
+        name: 'EduFlex',
+        description: 'A student portal built with React, Node.js, and MongoDB that allows students to manage assignments and view their schedule.',
+        technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+        videoLink: 'https://example.com/edu-flex-video', // Add your video link
+        githubLink: 'https://github.com/your-username/edu-flex' // Add your GitHub link
+    },
+    {
+        image: BuildMate,
+        name: 'BuildMate+',
+        description: 'A project management tool developed using React and Node.js for task tracking and collaboration.',
+        technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+        videoLink: 'https://example.com/buildmate-video', // Add your video link
+        githubLink: 'https://github.com/your-username/buildmate' // Add your GitHub link
+    },
     // Add more projects here...
 ];
 
