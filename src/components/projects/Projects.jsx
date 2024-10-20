@@ -45,11 +45,11 @@ const projectData = [
     },
     {
         image: EduFlex,
-        name: 'EduFlex',
-        description: 'A student portal built with React, Node.js, and MongoDB that allows students to manage assignments and view their schedule.',
-        technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+        name: 'Bankora',
+        description: 'A RESTful API for Banking Application.',
+        technologies: ['Spring Boot', 'MySQL', 'Hibernate'],
         videoLink: 'https://example.com/edu-flex-video', // Add your video link
-        githubLink: 'https://github.com/your-username/edu-flex' // Add your GitHub link
+        githubLink: 'https://github.com/mSrishan/Bankora' // Add your GitHub link
     },
     {
         image: BuildMate,
