@@ -4,6 +4,8 @@ import BuildMate from '../../assets/home/BuildMate.jpg'; // Import your project 
 import EduFlex from '../../assets/home/EduFlex.jpg'; // Import your project images
 import FrozenFantasy from '../../assets/home/FrozenFantasy.jpg'; // Import your project images
 import WOWSalon from '../../assets/home/WowSalon.jpg'; // Import your project images
+import GameScout from '../../assets/home/GameScout.jpg'; // Import your project images
+import Bankora from '../../assets/home/Bankora.jpg'; // Import your project images
 import { FaReact, FaNodeJs, FaJava, FaPython, FaVideo, FaGithub } from 'react-icons/fa'; // Added icons
 import { SiCss3, SiHtml5, SiDjango, SiMysql } from 'react-icons/si';
 
@@ -44,7 +46,7 @@ const projectData = [
         githubLink: 'https://github.com/mSrishan/Frozen-Fantasy' // Add your GitHub link
     },
     {
-        image: EduFlex,
+        image: Bankora,
         name: 'Bankora',
         description: 'A RESTful API for Banking Application.',
         technologies: ['Spring Boot', 'MySQL', 'Hibernate'],
@@ -52,10 +54,10 @@ const projectData = [
         githubLink: 'https://github.com/mSrishan/Bankora' // Add your GitHub link
     },
     {
-        image: BuildMate,
-        name: 'BuildMate+',
-        description: 'A project management tool developed using React and Node.js for task tracking and collaboration.',
-        technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+        image: GameScout,
+        name: 'GameScout',
+        description: 'Game-Scout is a web app designed to help you discover new and exciting video games.',
+        technologies: ['React'],
         videoLink: 'https://example.com/buildmate-video', // Add your video link
         githubLink: 'https://github.com/your-username/buildmate' // Add your GitHub link
     },
