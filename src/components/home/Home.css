@@ -5,7 +5,7 @@
 .featured-box {
     position: relative;
     display: flex;
-    height: 100vh;
+    height: 120vh;
     min-height: 700px;
 }
 
@@ -23,7 +23,7 @@
     background: var(--third-color);
     color: var(--color-white);
     padding: 3px 8px;
-    font-size: 18px;
+    font-size: 40px;
     border-radius: 5px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 .featured-text-info {
-    font-size: 16px;
+    font-size: 19px;
     margin-bottom: 30px;
     color: var(--text-color-second);
     text-align: justify;
@@ -63,9 +63,7 @@
 .social-icons {
     display: flex;
     margin-top: 5em;
-    gap: 30px;
 }
-
 
 .icon {
     display: flex;
@@ -117,13 +115,9 @@
     }
 }
 
-
-
 .scroll-btn {
     position: absolute;
     bottom: 0;
-    /* left: 50%; */
-    /* translate: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,10 +131,8 @@
     gap: 5px;
 }
 
-
-
-
-@media (max-width:1024px) {
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
     .featured-text {
         padding: 0;
     }
@@ -152,7 +144,7 @@
     }
 }
 
-@media (max-width:900px) {
+@media (max-width: 900px) {
     .featured-box {
         flex-direction: column;
         justify-content: center;
@@ -163,9 +155,19 @@
         width: 100%;
         order: 2;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         min-height: 60vh;
+        text-align: center;
+    }
 
+    .featured-name {
+        font-size: 36px;
+        /* Decrease font size for mobile */
+    }
+
+    .featured-text-info {
+        font-size: 16px;
+        /* Decrease font size for mobile */
     }
 
     .social-icons {
@@ -185,12 +187,17 @@
         width: 150px;
         height: 150px;
     }
-
 }
 
-@media (max-width:540px) {
+@media (max-width: 540px) {
     .featured-name {
-        font-size: 40px;
+        font-size: 28px;
+        /* Further decrease font size for very small screens */
+    }
+
+    .featured-text-info {
+        font-size: 14px;
+        /* Further decrease font size for very small screens */
     }
 }
 
@@ -198,20 +205,53 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
     cursor: pointer;
     color: var(--icon-color);
-    /* Add your custom color here */
     background-color: var(--icon-bg-color);
-    /* Optional: Background color */
 }
 
 .icon:hover {
-    color: var(--first-color);
-    /* Change to the color you want on hover */
-    background-color: var(--icon-bg-hover-color);
-    /* Optional: Change background color on hover */
+    color: var(--color-white);
+    background-color: var(--text-color-third);
+}
+
+.Hbtn {
+    width: 40%;
+    height: 110%;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #8e9b98;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.Hbtn:hover {
+    background-color: #0b9c8e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: aliceblue;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .Hbtn {
+        width: 80%;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Hbtn {
+        width: 100%;
+        font-size: 15px;
+        padding: 10px 15px;
+    }
 }

@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
 import ScrollReveal from "scrollreveal";
-import BuildMate from '../../assets/home/BuildMate.jpg'; // Import your project images
-import EduFlex from '../../assets/home/EduFlex.jpg'; // Import your project images
-import FrozenFantasy from '../../assets/home/FrozenFantasy.jpg'; // Import your project images
-import WOWSalon from '../../assets/home/WowSalon.jpg'; // Import your project images
-import GameScout from '../../assets/home/GameScout.jpg'; // Import your project images
-import Bankora from '../../assets/home/Bankora.jpg'; // Import your project images
-import { FaReact, FaNodeJs, FaJava, FaPython, FaVideo, FaGithub } from 'react-icons/fa'; // Added icons
-import { SiCss3, SiHtml5, SiDjango, SiMysql } from 'react-icons/si';
+import BuildMate from '../../assets/home/BuildMate.jpg';
+import EduFlex from '../../assets/home/EduFlex.jpg';
+import FrozenFantasy from '../../assets/home/FrozenFantasy.jpg';
+import WOWSalon from '../../assets/home/WowSalon.jpg';
+import GameScout from '../../assets/home/GameScout.jpg';
+import Bankora from '../../assets/home/Bankora.jpg';
+import { FaGithub } from 'react-icons/fa';
+import { FiExternalLink } from 'react-icons/fi';
 
 import "./Projects.css";
 
@@ -17,51 +17,49 @@ const projectData = [
         name: 'EduFlex',
         description: 'A student portal built with React, Node.js, and MongoDB that allows students to manage assignments and view their schedule.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-        videoLink: 'https://example.com/edu-flex-video', // Add your video link
-        githubLink: 'https://github.com/your-username/edu-flex' // Add your GitHub link
+        demoLink: 'https://example.com/edu-flex-demo',
+        githubLink: 'https://github.com/your-username/edu-flex'
     },
     {
         image: BuildMate,
         name: 'BuildMate+',
         description: 'A project management tool developed using React and Node.js for task tracking and collaboration.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-        videoLink: 'https://example.com/buildmate-video', // Add your video link
-        githubLink: 'https://github.com/your-username/buildmate' // Add your GitHub link
+        demoLink: 'https://example.com/buildmate-demo',
+        githubLink: 'https://github.com/your-username/buildmate'
     },
     {
         image: FrozenFantasy,
         name: 'Frozen Fantasy',
         description: 'A web UI for an Ice Cream Shop built with React, Tailwind CSS and Framer Motion.',
         technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
-        videoLink: 'https://example.com/project-beta-video', // Add your video link
-        githubLink: 'https://github.com/mSrishan/Frozen-Fantasy' // Add your GitHub link
+        demoLink: 'https://example.com/frozen-fantasy-demo',
+        githubLink: 'https://github.com/mSrishan/Frozen-Fantasy'
     },
-    
     {
         image: WOWSalon,
         name: 'WOW Salon',
         description: 'A web application for a salon built with NextJS, NodeJS, ExpressJS, MongoDB and Tailwind CSS.',
         technologies: ['NextJS', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
-        videoLink: 'https://example.com/project-beta-video', // Add your video link
-        githubLink: 'https://github.com/mSrishan/Frozen-Fantasy' // Add your GitHub link
+        demoLink: 'https://example.com/wow-salon-demo',
+        githubLink: 'https://github.com/mSrishan/WOW-Salon'
     },
     {
         image: Bankora,
         name: 'Bankora',
         description: 'A RESTful API for Banking Application.',
         technologies: ['Spring Boot', 'MySQL', 'Hibernate'],
-        videoLink: 'https://example.com/edu-flex-video', // Add your video link
-        githubLink: 'https://github.com/mSrishan/Bankora' // Add your GitHub link
+        demoLink: 'https://example.com/bankora-demo',
+        githubLink: 'https://github.com/mSrishan/Bankora'
     },
     {
         image: GameScout,
         name: 'GameScout',
         description: 'Game-Scout is a web app designed to help you discover new and exciting video games.',
         technologies: ['React'],
-        videoLink: 'https://example.com/buildmate-video', // Add your video link
-        githubLink: 'https://github.com/your-username/buildmate' // Add your GitHub link
+        demoLink: 'https://example.com/gamescout-demo',
+        githubLink: 'https://github.com/your-username/gamescout'
     },
-    // Add more projects here...
 ];
 
 const Projects = () => {
@@ -97,20 +95,20 @@ const Projects = () => {
                         </div>
                         <div className="project-links">
                             <a 
-                                href={project.videoLink} 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
-                                className="project-link"
-                            >
-                                <FaVideo /> Video
-                            </a>
-                            <a 
                                 href={project.githubLink} 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
                                 className="project-link"
                             >
                                 <FaGithub /> GitHub
+                            </a>
+                            <a 
+                                href={project.demoLink} 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                className="project-link"
+                            >
+                                <FiExternalLink /> Demo
                             </a>
                         </div>
                     </div>

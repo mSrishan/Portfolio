@@ -12,18 +12,15 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(1, 1fr);
-    /* Default to one column */
     justify-content: center;
 }
 
-/* Two columns on medium screens */
 @media (min-width: 768px) {
     .projects-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-/* Three columns on large screens */
 @media (min-width: 1024px) {
     .projects-container {
         grid-template-columns: repeat(3, 1fr);
@@ -31,43 +28,28 @@
 }
 
 .project-item {
-    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 0 auto;
     border-radius: 8px;
-    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
     position: relative;
     background-color: #fff;
 }
 
 .project-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    background-color: #f0f0f0;
-}
-
-.project-item:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.project-item:hover:before {
-    opacity: 1;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
 }
 
 .project-image {
     width: 100%;
     height: 200px;
+    border-radius: 8px;
+    transition: transform 0.4s ease;
     object-fit: cover;
-    transition: transform 0.3s ease;
 }
 
 .project-item:hover .project-image {
@@ -76,55 +58,64 @@
 
 .project-name {
     font-size: 1.5em;
-    margin: 10px 0;
+    margin-top: 10px;
     color: #333;
-}
-
-.project-technologies {
-    margin: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.technology {
-    display: inline-block;
-    margin: 5px;
-    padding: 5px 10px;
-    border-radius: 4px;
-    background-color: #e0e0e0;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.project-item:hover .technology {
-    background-color: #333;
-    color: #fff;
 }
 
 .project-description {
     margin: 10px 0;
+    color: #666;
+}
+
+.project-technologies {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.technology {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 5px 10px;
     font-size: 14px;
-    color: #555;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-item:hover .technology {
+    background-color: #000;
+    color: #fff;
 }
 
 .project-links {
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .project-link {
     display: inline-flex;
     align-items: center;
-    margin-right: 10px;
-    font-size: 16px;
-    color: #333;
-    text-decoration: none;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #ffffff;
+    background-color: #38b2ac;
+    /* Teal-400 */
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-decoration: none;
 }
 
 .project-link:hover {
-    text-decoration: underline;
-}
-
-.project-link svg {
-    margin-right: 5px;
+    background-color: #2c7a7b;
+    /* Slightly darker teal for hover */
+    transform: translateY(-2px);
+    cursor: pointer;
 }
