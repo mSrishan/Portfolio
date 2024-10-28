@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
             <div className="footer-social-icons">
     <a href='https://www.instagram.com/_s_r_i_s_h_a_n/#' target='_blank' className="icon"><FaInstagram /></a>
-    <a href='www.linkedin.com/in/srishan-mandawala-a09193232' target='_blank' className="icon"><FaLinkedin /></a>
+    <a href='https://www.linkedin.com/in/srishan-mandawala-a09193232' target='_blank' className="icon"><FaLinkedin /></a>
     <a href='https://github.com/mSrishan' target='_blank' className="icon"><FaGithub /></a>
     <a href='https://www.facebook.com/srishan.mandawala?mibextid=ZbWKwL' target='_blank' className="icon"><FaFacebook size={21} /></a>
 </div>
