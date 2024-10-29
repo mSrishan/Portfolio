@@ -197,6 +197,7 @@
 
     .featured-text-info {
         font-size: 14px;
+        margin-right: 5%;
         /* Further decrease font size for very small screens */
     }
 }
