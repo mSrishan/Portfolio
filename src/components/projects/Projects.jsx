@@ -33,7 +33,7 @@ const projectData = [
         name: 'Frozen Fantasy',
         description: 'A web UI for an Ice Cream Shop built with React, Tailwind CSS and Framer Motion.',
         technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
-        demoLink: 'https://example.com/frozen-fantasy-demo',
+        demoLink: 'https://frozen-fantasy.vercel.app/',
         githubLink: 'https://github.com/mSrishan/Frozen-Fantasy.git'
     },
     {
