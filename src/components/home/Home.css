@@ -191,12 +191,13 @@
 
 @media (max-width: 540px) {
     .featured-name {
-        font-size: 28px;
+        font-size: 27px;
         /* Further decrease font size for very small screens */
     }
 
     .featured-text-info {
         font-size: 14px;
+        margin-right: 5%;
         /* Further decrease font size for very small screens */
     }
 }

@@ -238,3 +238,22 @@ h3 {
         width: 100%;
     }
 }
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tech-icon {
+    width: 50px; /* Default size for desktop */
+    height: auto; /* Maintain aspect ratio */
+    margin: 10px; /* Add some spacing between icons */
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .tech-icon {
+        width: 70px; /* Increase size for mobile devices */
+    }
+}

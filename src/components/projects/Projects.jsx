@@ -17,8 +17,8 @@ const projectData = [
         name: 'EduFlex',
         description: 'A student portal built with React, Node.js, and MongoDB that allows students to manage assignments and view their schedule.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-        demoLink: 'https://example.com/edu-flex-demo',
-        githubLink: 'https://github.com/your-username/edu-flex'
+        demoLink: 'https://edu-flex-two.vercel.app/',
+        githubLink: 'https://github.com/mSrishan/EduFlex.git'
     },
     {
         image: BuildMate,
@@ -26,15 +26,15 @@ const projectData = [
         description: 'A project management tool developed using React and Node.js for task tracking and collaboration.',
         technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
         demoLink: 'https://example.com/buildmate-demo',
-        githubLink: 'https://github.com/your-username/buildmate'
+        githubLink: 'https://github.com/mSrishan/BuildMate_Plus.git'
     },
     {
         image: FrozenFantasy,
         name: 'Frozen Fantasy',
         description: 'A web UI for an Ice Cream Shop built with React, Tailwind CSS and Framer Motion.',
         technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
-        demoLink: 'https://example.com/frozen-fantasy-demo',
-        githubLink: 'https://github.com/mSrishan/Frozen-Fantasy'
+        demoLink: 'https://frozen-fantasy.vercel.app/',
+        githubLink: 'https://github.com/mSrishan/Frozen-Fantasy.git'
     },
     {
         image: WOWSalon,
@@ -42,7 +42,7 @@ const projectData = [
         description: 'A web application for a salon built with NextJS, NodeJS, ExpressJS, MongoDB and Tailwind CSS.',
         technologies: ['NextJS', 'Tailwind CSS', 'Node.js', 'Express', 'MongoDB'],
         demoLink: 'https://example.com/wow-salon-demo',
-        githubLink: 'https://github.com/mSrishan/WOW-Salon'
+        githubLink: 'https://github.com/mSrishan/WOW-Salon.git'
     },
     {
         image: Bankora,
@@ -50,15 +50,15 @@ const projectData = [
         description: 'A RESTful API for Banking Application.',
         technologies: ['Spring Boot', 'MySQL', 'Hibernate'],
         demoLink: 'https://example.com/bankora-demo',
-        githubLink: 'https://github.com/mSrishan/Bankora'
+        githubLink: 'https://github.com/mSrishan/Bankora.git'
     },
     {
         image: GameScout,
         name: 'GameScout',
         description: 'Game-Scout is a web app designed to help you discover new and exciting video games.',
         technologies: ['React'],
-        demoLink: 'https://example.com/gamescout-demo',
-        githubLink: 'https://github.com/your-username/gamescout'
+        demoLink: 'https://game-scout-kappa.vercel.app/',
+        githubLink: 'https://github.com/mSrishan/Game-Scout.git'
     },
 ];
 
