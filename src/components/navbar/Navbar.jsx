@@ -106,8 +106,8 @@ function Navbar(props) {
           <Button
             onClick={() => {
               const link = document.createElement('a');
-              link.href = '/path/to/your/Resume.pdf'; // Update this path to your resume
-              link.download = 'Resume.pdf';
+              link.href = '/path/to/your/SE_Srishan_Mandawala.pdf'; // Update this path to your resume
+              link.download = 'SE_Srishan_Mandawala.pdf';
               document.body.appendChild(link);
               link.click();
               document.body.removeChild(link);

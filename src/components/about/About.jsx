@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import './About.css';
 import { FiDownload } from 'react-icons/fi';
 import ScrollReveal from "scrollreveal";
-import resume from '../../assets/Resume.pdf';
+import resume from '../../assets/SE_Srishan_Mandawala.pdf';
 import { FaCalendarAlt, FaGraduationCap } from 'react-icons/fa';
 
 const About = () => {
@@ -39,16 +39,27 @@ const About = () => {
                     <div className="col">
                         <div className="about-info">
                             <h1>My introduction</h1>
+                            <br />
                             <p>
-                                I am passionate about working with cutting-edge technologies like ReactJS, NodeJS, ExpressJS, NextJS, Spring Boot, MongoDB, and MySQL, which empower me to build dynamic, scalable, and responsive web applications. With expertise in these frameworks, I craft intuitive and strong front-end interfaces that provide smooth, user-focused experiences. My strong background in developing reusable components and implementing innovative features enhances application functionality. By staying up-to-date with the latest trends and best practices, I ensure that my solutions are not only visually appealing but also high-performing across all devices.
+                                I am passionate about working with cutting-edge technologies like ReactJS, NodeJS, ExpressJS, NextJS, Spring Boot, MongoDB, and MySQL, which empower me to build dynamic, scalable, and responsive web applications. With expertise in these frameworks, I craft intuitive and strong front-end interfaces that provide smooth, user-focused experiences. My strong background in developing reusable components and implementing innovative features enhances application functionality.
                             </p>
+                            <br />
                             <p>
-                                On the back end, I specialize in building efficient, secure, and scalable systems that seamlessly integrate with front-end applications. From managing databases and optimizing server-side processes to implementing robust authentication and authorization protocols, I take a comprehensive approach to ensure reliable performance. My focus is on bridging the gap between design and functionality, creating applications that are both technically sound and user-friendly. I am continuously motivated by the challenge of enhancing user experiences through innovative solutions, viewing each project as a chance for growth and learning.
-
-
-
-
+                                By staying up-to-date with the latest trends and best practices, I ensure that my solutions are not only visually appealing but also high-performing across all devices. My technical skills allow me to create applications that are accessible, responsive, and aligned with industry standards, helping to meet both user expectations and project requirements.
                             </p>
+                            <br />
+                            <p>
+                                On the back end, I specialize in building efficient, secure, and scalable systems that seamlessly integrate with front-end applications. From managing databases and optimizing server-side processes to implementing robust authentication and authorization protocols, I take a comprehensive approach to ensure reliable performance.
+                            </p>
+                            <br />
+                            <p>
+                                My focus is on bridging the gap between design and functionality, creating applications that are both technically sound and user-friendly. I am continuously motivated by the challenge of enhancing user experiences through innovative solutions, viewing each project as a chance for growth and learning.
+                            </p>
+                            <br />
+
+
+
+                       
                             <div className="about-btn">
                                 <a href={resume} download='Resume'>
                                     <button className="btn">
@@ -74,9 +85,6 @@ const About = () => {
                                     <img width="75%" src="https://www.vectorlogo.zone/logos/java/java-ar21.svg" alt="Java"/>
                                 </code>
                                 <code>
-                                    <img width="75%" src="https://www.vectorlogo.zone/logos/angular/angular-ar21.svg" alt="Angular"/>
-                                </code>
-                                <code>
                                     <img width="75%" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-ar21.svg" alt="React"/>
                                 </code>
                                 <code>
@@ -98,9 +106,6 @@ const About = () => {
                                     <img width="75%" src="https://www.vectorlogo.zone/logos/springio/springio-ar21.svg" alt="Spring"/>
                                 </code>
                                 <code>
-                                    <img width="75%" src="https://www.vectorlogo.zone/logos/laravel/laravel-ar21.svg" alt="Laravel"/>
-                                </code>
-                                <code>
                                     <img width="105%" src="https://www.vectorlogo.zone/logos/visualstudio_code/visualstudio_code-ar21.svg" alt="VS Code"/>
                                 </code>
                                 <code>
@@ -108,9 +113,6 @@ const About = () => {
                                 </code>
                                 <code>
                                     <img width="105%" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="Node.js"/>
-                                </code>
-                                <code>
-                                    <img width="105%" src="https://www.vectorlogo.zone/logos/flutterio/flutterio-ar21.svg" alt="Flutter"/>
                                 </code>
                             </div>
                         </div>
