@@ -8,10 +8,11 @@ import Drawer from '@mui/material/Drawer';
 import IconButton from '@mui/material/IconButton';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemText from '@mui/material/ListItemText';
+import ListItemButton from "@mui/material/ListItemButton";
+import ListItemText from "@mui/material/ListItemText";
+
 import MenuIcon from '@mui/icons-material/Menu';
-import Toolbar from "@mui/material/Toolbar";
+import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 
@@ -65,62 +66,64 @@ function Navbar(props) {
       <CssBaseline />
       <AppBar component="nav" sx={{ backgroundColor: '#FFFFFF', color: primaryColor }}>
         <Toolbar sx={{ width: '100%', display: 'flex', justifyContent: 'space-between' }}>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="start"
-            onClick={handleDrawerToggle}
-            sx={{ mr: 2, display: { sm: 'none' }, color: primaryColor }}
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{
-              color: primaryColor,
-              display: { xs: 'none', sm: 'block' },
-              textAlign: 'center',
-              mr: 2,
-              fontFamily: 'Roboto, sans-serif', // Apply the font here
-            }}
-          >
-            Srishan
-          </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'center', flexGrow: 1 }}>
-            {navItems.map((item) => (
-              <Button
-                key={item.name}
-                onClick={() => handleNavigation(item.link)}
-                sx={{
-                  color: primaryColor,
-                  mx: 1,
-                  '&:hover': { color: '#0e9c87' }
-                }}
-              >
-                {item.name}
-              </Button>
-            ))}
+          <Box sx={{ display: 'flex', alignItems: 'center', width: '100%', justifyContent: 'space-between' }}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ display: { xs: 'flex', sm: 'none' }, color: primaryColor }}
+            >
+              <MenuIcon />
+            </IconButton>
+            <Typography
+              variant="h6"
+              component="div"
+              sx={{
+                color: primaryColor,
+                textAlign: 'center',
+                fontFamily: 'Roboto, sans-serif',
+                display: { xs: 'flex', sm: 'block' },
+                ml: { xs: 'auto', sm: 0 },
+                mr: { xs: 7, sm: 0 }
+              }}
+            >
+              SRISHAN 
+            </Typography>
+            <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'center', flexGrow: 1 }}>
+              {navItems.map((item) => (
+                <Button
+                  key={item.name}
+                  onClick={() => handleNavigation(item.link)}
+                  sx={{
+                    color: primaryColor,
+                    mx: 1,
+                    '&:hover': { color: '#0e9c87' }
+                  }}
+                >
+                  {item.name}
+                </Button>
+              ))}
+            </Box>
+            <Button
+              onClick={() => {
+                const link = document.createElement('a');
+                link.href = '/path/to/your/SE_Srishan_Mandawala.pdf';
+                link.download = 'SE_Srishan_Mandawala.pdf';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+              }}
+              sx={{
+                color: '#757575',
+                backgroundColor: '#e0e0e0',
+                display: { xs: 'none', sm: 'block' },
+                '&:hover': { color: '#0e9c87', backgroundColor: '#f0f0f0' }
+              }}
+            >
+              Download CV
+            </Button>
           </Box>
-          {/* Download CV button is only visible on larger screens */}
-          <Button
-            onClick={() => {
-              const link = document.createElement('a');
-              link.href = '/path/to/your/SE_Srishan_Mandawala.pdf'; // Update this path to your resume
-              link.download = 'SE_Srishan_Mandawala.pdf';
-              document.body.appendChild(link);
-              link.click();
-              document.body.removeChild(link);
-            }}
-            sx={{
-              color: '#757575',
-              backgroundColor: '#e0e0e0',
-              display: { xs: 'none', sm: 'block' }, // Hide in mobile view
-              '&:hover': { color: '#0e9c87', backgroundColor: '#f0f0f0' }
-            }}
-          >
-            Download CV
-          </Button>
         </Toolbar>
       </AppBar>
       <nav>
