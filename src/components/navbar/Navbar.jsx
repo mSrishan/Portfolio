@@ -10,7 +10,6 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
-
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
@@ -43,7 +42,7 @@ function Navbar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', backgroundColor: '#FFFFFF' }}>
-      <Typography variant="h6" sx={{ my: 2, color: primaryColor, fontFamily: 'Roboto, sans-serif' }}>
+      <Typography variant="h6" sx={{ my: 2, color: primaryColor, fontFamily: 'Roboto, sans-serif', fontWeight: 700 }}>
         Srishan
       </Typography>
       <Divider />
@@ -85,10 +84,12 @@ function Navbar(props) {
                 fontFamily: 'Roboto, sans-serif',
                 display: { xs: 'flex', sm: 'block' },
                 ml: { xs: 'auto', sm: 0 },
-                mr: { xs: 7, sm: 0 }
+                mr: { xs: 7, sm: 0 },
+                fontWeight: 700,
+                letterSpacing: 1
               }}
             >
-              SRISHAN 
+              SRISHAN
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'flex' }, justifyContent: 'center', flexGrow: 1 }}>
               {navItems.map((item) => (
@@ -98,7 +99,7 @@ function Navbar(props) {
                   sx={{
                     color: primaryColor,
                     mx: 1,
-                    '&:hover': { color: '#0e9c87' }
+                    '&:hover': { color: '#0e9c87', backgroundColor: '#f0f0f0', transform: 'scale(1.05)' }
                   }}
                 >
                   {item.name}
