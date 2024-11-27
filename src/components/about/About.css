@@ -13,7 +13,8 @@
   max-width: 48%;
 }
 
-.about-info, .skills-box {
+.about-info,
+.skills-box {
   padding: 1.5em;
   background: var(--color-white);
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
@@ -63,6 +64,16 @@
   margin-bottom: 1.5em;
 }
 
+/* Default: Show full content */
+.intro-long {
+  display: block;
+}
+
+.intro-short {
+  display: none;
+}
+
+/* For smaller screens */
 @media (max-width: 768px) {
   .col {
     max-width: 100%;
@@ -74,5 +85,13 @@
 
   .tech-icon {
     width: 50px;
+  }
+
+  .intro-long {
+    display: none;
+  }
+
+  .intro-short {
+    display: block;
   }
 }

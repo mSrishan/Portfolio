@@ -2,7 +2,7 @@ body {
   background: var(--body-color);
 }
 
-.kontainer {
+.container {
   width: 100%;
   position: relative;
 }

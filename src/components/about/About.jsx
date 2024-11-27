@@ -37,37 +37,25 @@ const About = () => {
                 </div>
                 <div className="row">
                     <div className="col">
-                        <div className="about-info">
-                            <h1>My introduction</h1>
-                            <br />
-                            <p>
-                                I am passionate about working with cutting-edge technologies like ReactJS, NodeJS, ExpressJS, NextJS, Spring Boot, MongoDB, and MySQL, which empower me to build dynamic, scalable, and responsive web applications. With expertise in these frameworks, I craft intuitive and strong front-end interfaces that provide smooth, user-focused experiences. My strong background in developing reusable components and implementing innovative features enhances application functionality.
-                            </p>
-                            <br />
-                            <p>
-                                By staying up-to-date with the latest trends and best practices, I ensure that my solutions are not only visually appealing but also high-performing across all devices. My technical skills allow me to create applications that are accessible, responsive, and aligned with industry standards, helping to meet both user expectations and project requirements.
-                            </p>
-                            <br />
-                            <p>
-                                On the back end, I specialize in building efficient, secure, and scalable systems that seamlessly integrate with front-end applications. From managing databases and optimizing server-side processes to implementing robust authentication and authorization protocols, I take a comprehensive approach to ensure reliable performance.
-                            </p>
-                            <br />
-                            <p>
-                                My focus is on bridging the gap between design and functionality, creating applications that are both technically sound and user-friendly. I am continuously motivated by the challenge of enhancing user experiences through innovative solutions, viewing each project as a chance for growth and learning.
-                            </p>
-                            <br />
+<div className="about-info">
+    <h1>My introduction</h1>
+    <br />
+    <p className="intro-long">
+        I am passionate about working with cutting-edge technologies like ReactJS, NodeJS, ExpressJS, NextJS, Spring Boot, MongoDB, and MySQL, which empower me to build dynamic, scalable, and responsive web applications. With expertise in these frameworks, I craft intuitive and strong front-end interfaces that provide smooth, user-focused experiences. My strong background in developing reusable components and implementing innovative features enhances application functionality.
+    </p>
+    <p className="intro-short">
+        I am passionate about creating scalable, responsive web applications with a focus on intuitive user experiences and innovative functionality. I thrive on building solutions that are accessible, high-performing, and aligned with user needs.
+    </p>
+    <br />
+    <div className="about-btn">
+        <a href={resume} download="Resume">
+            <button className="btn">
+                Download CV <FiDownload />
+            </button>
+        </a>
+    </div>
+</div>
 
-
-
-                       
-                            <div className="about-btn">
-                                <a href={resume} download='Resume'>
-                                    <button className="btn">
-                                        Download CV <FiDownload />
-                                    </button>
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     <div className="col">
                         <div className="skills-box">
