@@ -19,7 +19,7 @@ const projectData = [
     name: 'MedSchedule',
     description: 'A web application for managing medical appointments.',
     technologies: ['React', 'TailwindCSS'],
-    demoLink: 'https://example.com/medschedule-demo',
+    demoLink: 'https://med-schedule-frontend.vercel.app/',
     githubLink: 'https://github.com/mSrishan/MedSchedule-frontend.git',
   },
   {
