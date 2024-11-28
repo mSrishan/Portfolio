@@ -60,7 +60,7 @@ const HomeComponent = () => {
                         <p>I am <span className='typedText' ref={typedElement}>Frontend Developer</span></p>
                     </div>
                     <div className="featured-text-info">
-                        <p>I’m Srishan, a tech enthusiast from Galle, diving deep into full-stack development while pursuing my BSc. (Hons.) in Computing & Information Systems at Sabaragamuwa University. Always curious and driven, I’m passionate about crafting innovative solutions that push the boundaries of technology.</p>
+                        <p>I’m Srishan, a tech enthusiast from Colombo, diving deep into full-stack development while pursuing my BSc. (Hons.) in Computing & Information Systems at Sabaragamuwa University. Always curious and driven, I’m passionate about crafting innovative solutions that push the boundaries of technology.</p>
                     </div>
                     <div className="featured-text-btn">
                         <button onClick={handleDownload} className="Hbtn">Download CV</button>

@@ -13,15 +13,7 @@ import Bankora from '../../assets/home/Bankora.jpg';
 import MedSchedule from '../../assets/home/MedSchedule.jpg';
 
 const projectData = [
-  {
-    image: EduFlex,
-    name: 'EduFlex',
-    description:
-      'A student portal built with React, Node.js, and MongoDB that allows students to manage assignments and view their schedule.',
-    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
-    demoLink: 'https://edu-flex-two.vercel.app/',
-    githubLink: 'https://github.com/mSrishan/EduFlex.git',
-  },
+
   {
     image: MedSchedule,
     name: 'MedSchedule',
@@ -47,6 +39,15 @@ const projectData = [
     technologies: ['React', 'Tailwind CSS', 'Framer Motion'],
     demoLink: 'https://frozen-fantasy.vercel.app/',
     githubLink: 'https://github.com/mSrishan/Frozen-Fantasy.git',
+  },
+    {
+    image: EduFlex,
+    name: 'EduFlex',
+    description:
+      'A student portal built with React, Node.js, and MongoDB that allows students to manage assignments and view their schedule.',
+    technologies: ['React', 'Node.js', 'Express', 'MongoDB'],
+    demoLink: 'https://edu-flex-two.vercel.app/',
+    githubLink: 'https://github.com/mSrishan/EduFlex.git',
   },
   {
     image: WOWSalon,
