@@ -14,6 +14,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import resume from '../../assets/SE_Srishan_Mandawala.pdf';
 
 const drawerWidth = 240;
 const navItems = [
@@ -22,6 +23,13 @@ const navItems = [
   { name: 'Projects', link: '#projects' },
   { name: 'Contact', link: '#contact' }
 ];
+   const handleDownload = () => {
+    const link = document.createElement('a');
+    link.href = resume; // Use the imported 'resume' variable
+    link.download = 'SE_Srishan_Mandawala.pdf';
+    link.click();
+};
+
 const primaryColor = "#0e9c87";
 
 function Navbar(props) {
@@ -106,15 +114,11 @@ function Navbar(props) {
                 </Button>
               ))}
             </Box>
+
+           
+
             <Button
-              onClick={() => {
-                const link = document.createElement('a');
-                link.href = '/path/to/your/SE_Srishan_Mandawala.pdf';
-                link.download = 'SE_Srishan_Mandawala.pdf';
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-              }}
+              onClick={handleDownload}
               sx={{
                 color: '#757575',
                 backgroundColor: '#e0e0e0',
