@@ -15,7 +15,7 @@ const projectData = [
     image: MedSchedule,
     name: 'MedSchedule',
     description: 'A web application for managing medical appointments.',
-    technologies: ['React', 'TailwindCSS'],
+    technologies: ['React', 'TailwindCSS', 'Spring Boot', 'MySQL'],
     githubLink: 'https://github.com/mSrishan/MedSchedule-frontend.git',
   },
   {
