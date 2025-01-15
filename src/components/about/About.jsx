@@ -102,9 +102,6 @@ const About = () => {
                                 <code>
                                     <img width="105%" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-ar21.svg" alt="Node.js"/>
                                 </code>
-                                <code>
-                                    <img width="105%" src="https://www.vectorlogo.zone/logos/angular/angular-ar21.svg" alt="Node.js"/>
-                                </code>
                             </div>
                         </div>
                     </div>
